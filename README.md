@@ -2,7 +2,7 @@
 
 > *Configurable widget built with [ReactJS](https://github.com/facebook/create-react-app) and Typescript*
 
-This project requires Node 14 or higher to be installed already. And a package manager such as NPM or Yarn
+This project requires Node 14 or higher to be installed already. And a package manager such as NPM or Yarn.
 
 ## Project Setup
 
