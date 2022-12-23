@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { DataGrid } from "./components";
+import { BASE_URL } from "./constants";
 
 function App() {
+  const columnData = [
+    { label: "Name", key: "name", type: "string" },
+    { label: "Date", key: "date", type: "date" },
+    { label: "Category", key: "category", type: "string" },
+    { label: "Amount", key: "amount", type: "number" },
+    { label: "Created At", key: "created_at", type: "date" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"parent"}>
+      <DataGrid
+        columns={columnData}
+        apiUrl={BASE_URL}
+        title={"name"}
+        subtitle={"amount"}
+      />
     </div>
   );
 }
