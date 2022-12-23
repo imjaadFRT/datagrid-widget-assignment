@@ -6,7 +6,7 @@ This project requires Node 14 or higher to be installed already. And a package m
 
 ## Project Setup
 
-Please follow the steps mentioned below in order to run this project.
+Please follow the steps mentioned below inside the project directory in order to run the application.
 
 - Install all the required dependencies by running `npm install`.
 - After all dependencies are installed, run the application by using `npm start` and it will open up the app in the browser.
