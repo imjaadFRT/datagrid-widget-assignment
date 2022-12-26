@@ -13,12 +13,14 @@ function App() {
 
   return (
     <div className={"parent"}>
-      <DataGrid
-        columns={columnData}
-        apiUrl={BASE_URL}
-        title={"name"}
-        subtitle={"amount"}
-      />
+      <div className="widget-container">
+        <DataGrid
+          columns={columnData}
+          apiUrl={BASE_URL}
+          title={"name"}
+          subtitle={"amount"}
+        />
+      </div>
     </div>
   );
 }
